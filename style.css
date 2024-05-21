@@ -1,0 +1,135 @@
+body {
+    /* background-color: #e8f5e9; */
+    background-image: linear-gradient(to right, rgb(0, 110, 255), #4caf50);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  header, footer {
+    text-align: center;
+    /* background-color: #4caf50; */
+    background-image: linear-gradient(to left, rgb(0, 110, 255), #4caf50);
+    color: black;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+  }
+  
+  header {
+    top: 0;
+  }
+  
+  footer {
+    bottom: 0;
+  }
+  
+  h1, h4 {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-top: 60px; /* Adjusted for the fixed header */
+    margin-bottom: 60px; /* Adjusted for the fixed footer */
+    max-height: 400px;
+  }
+  
+  #new-task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  #new-task input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  #new-task button {
+    width: 25%;
+    padding: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #new-task button:hover {
+    background-color: #388e3c;
+    color: black;
+  }
+  
+  #task {
+    overflow-y: scroll;
+    max-height: 300px;
+  }
+  
+  #tasks {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #tasks li {
+    background-color: #f1f8e9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #tasks li span {
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  /* #tasks li button */
+#edit {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4caf50;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: color 0.3s;
+  }
+  #delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4caf50;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: color 0.3s;
+  }
+  
+  #edit:hover {
+    color: rgb(0, 140, 255);
+  }
+  #delete:hover {
+    color: red;
+  }
+  
+  .fa-pen-to-square, .fa-trash {
+    pointer-events: none;
+  }
+  
